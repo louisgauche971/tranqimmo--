@@ -17,7 +17,7 @@
   const CONTACT_TO = 'contact@tranqimmo.fr'; // TODO: remplacez par votre email officiel
   // Option 1 (recommandé) : Formspree. Créez un formulaire puis collez l’URL ici :
   // ex : https://formspree.io/f/xxxxxxx
-  const FORMSPREE_ENDPOINT = ''; // laissez vide pour utiliser l’envoi via email
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xgowevpg'; // laissez vide pour utiliser l’envoi via email
 
   const form = document.getElementById('contactForm');
   const statusEl = document.getElementById('formStatus');

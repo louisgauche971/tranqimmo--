@@ -480,6 +480,7 @@
             <div class="box box--soft">
               <h3>Contact direct</h3>
               <p class="muted">Remplacez l’adresse ci-dessous par votre email officiel.</p>
+p>
               <p class="biglink"><a href="mailto:contact@tranqimmo.fr">contact@tranqimmo.fr</a></p>
             </div>
           </div>
@@ -487,43 +488,50 @@
           <div class="contact__right">
             <!-- Formspree (recommended for Vercel) -->
             <!-- Remplacez l'URL action par la vôtre : https://formspree.io/f/xxxxx -->
-            <form class="form glass" id="leadForm" action="https://formspree.io/f/yourFormId" method="POST">
-              <div class="form__row">
-                <label>Nom / Société
-                  <input name="societe" type="text" placeholder="Ex : Fonds X / Agence Y" required>
-                </label>
-                <label>Vous êtes…
-                  <select name="profil" required>
-                    <option value="" disabled selected>Choisir…</option>
-                    <option>Investisseur</option>
-                    <option>Professionnel du bâtiment</option>
-                    <option>Agence immobilière</option>
-                    <option>Particulier</option>
-                    <option>Autre</option>
-                  </select>
-                </label>
-              </div>
+            <form class="form glass" id="contactForm" data-to="contact@tranqimmo.fr" novalidate>
+  <div class="form__row">
+    <label>Nom / Société
+      <input name="societe" type="text" placeholder="Ex : Fonds X / Entreprise Y" required>
+    </label>
+    <label>Vous êtes…
+      <select name="profil" required>
+        <option value="" disabled selected>Choisir…</option>
+        <option>Investisseur</option>
+        <option>Professionnel du bâtiment</option>
+        <option>Agence immobilière</option>
+        <option>Particulier</option>
+        <option>Autre</option>
+      </select>
+    </label>
+  </div>
 
-              <div class="form__row">
-                <label>Email
-                  <input name="email" type="email" placeholder="vous@exemple.com" required>
-                </label>
-                <label>Zone (optionnel)
-                  <input name="zone" type="text" placeholder="Ex : PACA / Var">
-                </label>
-              </div>
+  <div class="form__row">
+    <label>Email
+      <input name="email" type="email" placeholder="vous@exemple.com" required>
+    </label>
+    <label>Zone (optionnel)
+      <input name="zone" type="text" placeholder="Ex : Var / PACA">
+    </label>
+  </div>
 
-              <label>Message
-                <textarea name="message" rows="5" placeholder="Votre intérêt, vos questions, votre contexte…"></textarea>
-              </label>
+  <label>Message
+    <textarea name="message" rows="5" placeholder="Votre intérêt, vos questions, votre contexte…" required></textarea>
+  </label>
 
-              <div class="form__actions">
-                <button class="btn btn--primary" type="submit">Envoyer</button>
-                <button class="btn btn--ghost" type="button" id="mailtoBtn">Envoyer par email</button>
-              </div>
+  <div class="form__actions">
+    <button class="btn btn--primary" type="submit">Envoyer</button>
+    <button class="btn btn--ghost" type="button" id="copyBtn">Copier le message</button>
+  </div>
 
-              <p class="fine">En envoyant ce formulaire, vous acceptez d’être recontacté au sujet de Tranqimmo.</p>
-            </form>
+  <div class="form__note">
+    <p class="fine">
+      ✅ Par défaut, le bouton “Envoyer” ouvre votre application email (fonctionne sans serveur).
+      <br>
+      ⚡ Pour un envoi “sans email” (direct depuis le site), activez Formspree dans <code>script.js</code>.
+    </p>
+    <p class="fine" id="formStatus" style="display:none"></p>
+  </div>
+</form>
           </div>
         </div>
       </div>

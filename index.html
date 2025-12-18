@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tranqimmo — Prototype investisseurs</title>
+  <meta name="description" content="Tranqimmo : plateforme tout-en-un (rénovation, immobilier, démarches). Prototype de pré-lancement pour partenaires & investisseurs." />
+  <meta property="og:title" content="Tranqimmo — Prototype investisseurs" />
+  <meta property="og:description" content="La tranquillité pour vos projets immobiliers, du devis au mandat." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#070A12" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Tranqimmo">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Tranqimmo</span>
+        <span class="badge">Prototype investisseurs</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#solution">Solution</a>
+        <a href="#produit">Produit</a>
+        <a href="#business">Business</a>
+        <a href="#roadmap">Roadmap</a>
+        <a class="nav__cta" href="#contact">Contact</a>
+      </nav>
+
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pillset">
+            <span class="pill">Rénovation</span>
+            <span class="pill">Immobilier</span>
+            <span class="pill">Démarches</span>
+          </div>
+
+          <h1>
+            La plateforme <span class="grad">tout-en-un</span> qui apporte de la
+            <span class="grad2">tranquillité</span> aux projets immobiliers.
+          </h1>
+
+          <p class="lead">
+            Tranqimmo connecte <strong>propriétaires</strong>, <strong>artisans</strong> et <strong>agences</strong> avec un parcours
+            simple et transparent — du devis à la mise en vente, jusqu’aux autorisations.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn--primary" href="#contact">Demander un échange</a>
+            <a class="btn btn--ghost" href="#produit">Voir le produit</a>
+          </div>
+
+          <div class="mini-kpis">
+            <div class="kpi">
+              <div class="kpi__top"><span class="dot"></span><span class="kpi__label">Positionnement</span></div>
+              <div class="kpi__value">Écosystème unique</div>
+              <div class="kpi__sub">B2B2C</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__top"><span class="dot dot--2"></span><span class="kpi__label">Promesse</span></div>
+              <div class="kpi__value">Parcours fluide</div>
+              <div class="kpi__sub">Qualité & transparence</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__top"><span class="dot dot--3"></span><span class="kpi__label">Phase</span></div>
+              <div class="kpi__value">Pré‑lancement</div>
+              <div class="kpi__sub">Partenaires pilotes</div>
+            </div>
+          </div>
+
+          <p class="fine">
+            Prototype de présentation (non contractuel) — conçu pour recruter des partenaires pilotes et valider les parcours.
+          </p>
+        </div>
+
+        <!-- Visual mock -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="glass phone">
+            <div class="phone__top">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <div class="bar"></div>
+            </div>
+
+            <div class="phone__body">
+              <div class="cardx">
+                <div class="cardx__h">
+                  <div class="avatar"></div>
+                  <div class="lines">
+                    <div class="line w-70"></div>
+                    <div class="line w-45"></div>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>Devis</span><span>Qualité</span><span>Proximité</span>
+                </div>
+                <div class="meter"></div>
+              </div>
+
+              <div class="grid2">
+                <div class="tile">
+                  <div class="tile__icon">👷</div>
+                  <div class="tile__t">Travaux</div>
+                  <div class="tile__s">Demandes qualifiées</div>
+                </div>
+                <div class="tile">
+                  <div class="tile__icon">🏠</div>
+                  <div class="tile__t">Immo</div>
+                  <div class="tile__s">Mandats entrants</div>
+                </div>
+                <div class="tile wide">
+                  <div class="tile__icon">📝</div>
+                  <div class="tile__t">Autorisations</div>
+                  <div class="tile__s">DP • Permis • PLU</div>
+                </div>
+              </div>
+
+              <div class="chart">
+                <div class="chart__bar h1"></div>
+                <div class="chart__bar h2"></div>
+                <div class="chart__bar h3"></div>
+                <div class="chart__bar h4"></div>
+                <div class="chart__bar h5"></div>
+              </div>
+
+              <div class="stamp">Tranqimmo • Preview</div>
+            </div>
+          </div>
+
+          <div class="glow g1"></div>
+          <div class="glow g2"></div>
+          <div class="glow g3"></div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section" id="solution">
+      <div class="container">
+        <div class="head">
+          <h2>Un parcours fragmenté. Une solution unifiée.</h2>
+          <p>
+            Aujourd’hui, les projets immobiliers cumulent stress, perte de temps et manque de visibilité.
+            Tranqimmo simplifie et connecte les acteurs au même endroit.
+          </p>
+        </div>
+
+        <div class="triple">
+          <article class="panel">
+            <div class="panel__icon">⏱️</div>
+            <h3>Temps perdu</h3>
+            <p>Interlocuteurs multiples, devis dispersés, relances, prospection.</p>
+          </article>
+          <article class="panel">
+            <div class="panel__icon">🧩</div>
+            <h3>Complexité</h3>
+            <p>Administratif, choix du bon pro, compréhension des étapes.</p>
+          </article>
+          <article class="panel">
+            <div class="panel__icon">🔍</div>
+            <h3>Manque de transparence</h3>
+            <p>Difficile de comparer, d’évaluer et de décider sereinement.</p>
+          </article>
+        </div>
+
+        <div class="banner">
+          <div>
+            <div class="banner__k">Proposition de valeur</div>
+            <div class="banner__t">“Rénovation + Vente + Démarches” dans une expérience fluide</div>
+            <div class="banner__s">Leads qualifiés pour les pros, tranquillité pour les particuliers.</div>
+          </div>
+          <a class="btn btn--primary" href="#contact">Échanger</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUIT -->
+    <section class="section section--alt" id="produit">
+      <div class="container">
+        <div class="head">
+          <h2>Produit</h2>
+          <p>Trois piliers, un seul parcours, une seule marque : Tranqimmo.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__top">
+              <div class="ico">👷</div>
+              <div>
+                <h3>Tranqimmo Travaux</h3>
+                <p class="muted">Mise en relation moderne et qualifiée.</p>
+              </div>
+            </div>
+            <ul class="bullets">
+              <li>Demandes ciblées (zone, métier, disponibilité)</li>
+              <li>Profils pros : avis, avant/après, vidéo</li>
+              <li>Messagerie et devis centralisés</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="ico">🏠</div>
+              <div>
+                <h3>Tranqimmo Immo</h3>
+                <p class="muted">Mandats entrants et parcours vendeur clair.</p>
+              </div>
+            </div>
+            <ul class="bullets">
+              <li>Accès à une base de vendeurs qualifiés</li>
+              <li>Propositions de mandats simples / exclusifs</li>
+              <li>Mise en avant et suivi des performances</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="ico">📝</div>
+              <div>
+                <h3>Autorisations</h3>
+                <p class="muted">DP, Permis, PLU — délégation possible.</p>
+              </div>
+            </div>
+            <ul class="bullets">
+              <li>Guidage selon la zone</li>
+              <li>Délégation au besoin (service / partenaires)</li>
+              <li>Suivi des étapes & documents</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="split">
+          <div class="box">
+            <h3>Pourquoi ça marche</h3>
+            <p class="muted">
+              Tranqimmo réduit les frictions entre acteurs : clarté des étapes, mise en relation pertinente,
+              et expérience moderne centrée “confiance”.
+            </p>
+            <div class="tags">
+              <span>Qualité</span><span>Transparence</span><span>Tranquillité</span><span>UX</span>
+            </div>
+          </div>
+
+          <div class="box box--grad">
+            <h3>Ce que nous cherchons</h3>
+            <p class="muted">Partenaires pilotes (artisans & agences) + retours terrain pour itérer vite.</p>
+            <div class="steps">
+              <div class="step"><span>1</span> Démo prototype</div>
+              <div class="step"><span>2</span> Tests partenaires</div>
+              <div class="step"><span>3</span> Itérations</div>
+            </div>
+            <a class="btn btn--primary" href="#contact">Rejoindre la bêta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section class="section" id="business">
+      <div class="container">
+        <div class="head">
+          <h2>Business model</h2>
+          <p>Sources de revenus alignées sur la performance et la valeur créée.</p>
+        </div>
+
+        <div class="grid">
+          <article class="panel panel--soft">
+            <h3>Commission à la performance</h3>
+            <p class="muted">Rémunération lorsque la mise en relation aboutit (devis accepté / mandat obtenu), selon règles de lancement.</p>
+          </article>
+          <article class="panel panel--soft">
+            <h3>Abonnements & visibilité</h3>
+            <p class="muted">Mise en avant pros/agences et offres d’accès aux opportunités (adaptées au marché).</p>
+          </article>
+          <article class="panel panel--soft">
+            <h3>Service administratif</h3>
+            <p class="muted">Facturation des démarches (DP, permis, PLU) en option, avec valeur immédiate.</p>
+          </article>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric__k">North Star</div>
+            <div class="metric__v">Projets traités</div>
+            <div class="metric__s">Travaux + ventes + démarches</div>
+          </div>
+          <div class="metric">
+            <div class="metric__k">Go‑to‑market</div>
+            <div class="metric__v">B2B2C</div>
+            <div class="metric__s">Partenaires → acquisition</div>
+          </div>
+          <div class="metric">
+            <div class="metric__k">Moat</div>
+            <div class="metric__v">Données & UX</div>
+            <div class="metric__s">Qualité / pertinence</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section section--alt" id="roadmap">
+      <div class="container">
+        <div class="head">
+          <h2>Roadmap</h2>
+          <p>Trajectoire claire : bêta → itération → lancement.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__content">
+              <div class="tl__top"><span class="tl__t">Phase 1</span><span class="tl__tag">Maintenant</span></div>
+              <h3>Pré‑lancement</h3>
+              <p class="muted">Landing, recrutement partenaires pilotes, validation des parcours (Travaux / Immo / Autorisations).</p>
+            </div>
+          </div>
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__content">
+              <div class="tl__top"><span class="tl__t">Phase 2</span><span class="tl__tag">Bêta</span></div>
+              <h3>MVP</h3>
+              <p class="muted">Onboarding, demandes, messagerie, suivi de projet, analytics, itérations rapides.</p>
+            </div>
+          </div>
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__content">
+              <div class="tl__top"><span class="tl__t">Phase 3</span><span class="tl__tag">Lancement</span></div>
+              <h3>Scale local → national</h3>
+              <p class="muted">Expansion géographique, recommandation, automatisations, partenariats.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta2">
+          <div>
+            <div class="cta2__k">Investisseurs / partenaires</div>
+            <div class="cta2__t">Envie d’échanger sur le potentiel et la stratégie go‑to‑market ?</div>
+          </div>
+          <a class="btn btn--primary" href="#contact">Planifier un call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="head">
+          <h2>Contact</h2>
+          <p>Laissez vos coordonnées (investisseur, artisan, agence). On vous recontacte rapidement.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__left">
+            <div class="box">
+              <h3>Ce que vous recevrez</h3>
+              <ul class="bullets">
+                <li>Démo produit (prototype + parcours)</li>
+                <li>Vision & roadmap</li>
+                <li>Discussion business / go‑to‑market</li>
+              </ul>
+              <div class="hint">
+                <strong>Astuce Vercel :</strong> pour un formulaire “sans serveur”, utilisez Formspree (ou gardez le bouton email).
+              </div>
+            </div>
+
+            <div class="box box--soft">
+              <h3>Contact direct</h3>
+              <p class="muted">Remplacez l’adresse ci-dessous par votre email officiel.</p>
+              <p class="biglink"><a href="mailto:contact@tranqimmo.fr">contact@tranqimmo.fr</a></p>
+            </div>
+          </div>
+
+          <div class="contact__right">
+            <!-- Formspree (recommended for Vercel) -->
+            <!-- Remplacez l'URL action par la vôtre : https://formspree.io/f/xxxxx -->
+            <form class="form glass" id="leadForm" action="https://formspree.io/f/yourFormId" method="POST">
+              <div class="form__row">
+                <label>Nom / Société
+                  <input name="societe" type="text" placeholder="Ex : Fonds X / Agence Y" required>
+                </label>
+                <label>Vous êtes…
+                  <select name="profil" required>
+                    <option value="" disabled selected>Choisir…</option>
+                    <option>Investisseur</option>
+                    <option>Professionnel du bâtiment</option>
+                    <option>Agence immobilière</option>
+                    <option>Particulier</option>
+                    <option>Autre</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form__row">
+                <label>Email
+                  <input name="email" type="email" placeholder="vous@exemple.com" required>
+                </label>
+                <label>Zone (optionnel)
+                  <input name="zone" type="text" placeholder="Ex : PACA / Var">
+                </label>
+              </div>
+
+              <label>Message
+                <textarea name="message" rows="5" placeholder="Votre intérêt, vos questions, votre contexte…"></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit">Envoyer</button>
+                <button class="btn btn--ghost" type="button" id="mailtoBtn">Envoyer par email</button>
+              </div>
+
+              <p class="fine">En envoyant ce formulaire, vous acceptez d’être recontacté au sujet de Tranqimmo.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <span class="footer__mark" aria-hidden="true"></span>
+          <div>
+            <div class="footer__name">Tranqimmo</div>
+            <div class="footer__muted">Prototype de pré‑lancement</div>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <a href="#top">Haut de page ↑</a>
+          <span class="sep">•</span>
+          <a href="#">Mentions</a>
+          <span class="sep">•</span>
+          <a href="#">Confidentialité</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
